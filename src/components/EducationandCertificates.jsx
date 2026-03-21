@@ -14,20 +14,20 @@ const EducationandCertificates = () => {
         </div>
 
         <div className="displaycont h-fit w-2xl border rounded-md flex flex-col gap-5 p-5 relative">
-            <div className="absolute left-11 top-0 h-full w-[1px] bg-[#FFFBEB]"></div>  
+            <div className="absolute left-11 top-0 h-full w-px bg-[#FFFBEB]"></div>  
           <Education
             Logo={AndhraLogo}
             StartDate={"June 2022"}
             EndDate={"March 2023"}
             ClgName={"The Andhra Education Society's High School"}
-            Course={"SSC (10th std)"}
+            Course={"SSC (10th std) - 86.6%"}
           />
           <Education
             Logo={SiesLogo}
             StartDate={"June 2024"}
             EndDate={"March 2025"}
             ClgName={"SIES College of Arts, Science and Commerce"}
-            Course={"HSC (12th std)"}
+            Course={"HSC (12th std) - 64.5%"}
           />
           <Education
             Logo={BuntsLogo}

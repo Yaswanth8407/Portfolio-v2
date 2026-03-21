@@ -7,9 +7,9 @@ const Education = (props) => {
         <img src={props.Logo} alt="" className="rounded-full" />
         </div>
         <div className="info flex flex-col">
-            <div className="Date text-s opacity-65">{props.StartDate} - {props.EndDate}</div>
+            <div className="Date text-xs opacity-65">{props.StartDate} - {props.EndDate}</div>
             <div className="ClgName font-bold text-md">{props.ClgName}</div>
-            <div className="Course text-s opacity-65">{props.Course}</div>
+            <div className="Course text-xs opacity-65">{props.Course}</div>
         </div>
     </div>
   )
