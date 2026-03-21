@@ -5,7 +5,7 @@ import Bg_img from "../assets/download.jpg";
 const HeroSection = () => {
   return (
     <div
-      className="w-screen h-screen flex flex-col gap-2 items-center justify-center border-b-2 border-[gray]"
+      className="w-full h-screen flex flex-col gap-2 items-center justify-center border-b-2 border-[gray]"
     >
       <div className="MyPicAndName flex gap-4 items-center justify-center ">
         <img
