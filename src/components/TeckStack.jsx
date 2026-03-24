@@ -9,7 +9,7 @@ const skillsData = [
   {
     title: "Web Development",
     desc: "I build responsive and dynamic web applications with modern frontend and backend technologies.",
-    items: ["HTML", "CSS", "React", "Node.js", "Express"],
+    items: ["HTML", "CSS", "React", "Node.js", "Express", "Tailwind"],
   },
   {
     title: "Databases",
