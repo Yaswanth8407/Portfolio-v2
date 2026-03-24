@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <div className="fixed flex w-350 top-10 h-12 items-center justify-between mx-15 z-50">
-      <div className="py-2 px-7 backdrop-blur-sm bg-white/10 border border-gray-400 rounded-4xl flex items-center justify-center gap-2">
+      <div className="py-2 px-7 backdrop-blur-sm bg-white/10 border border-[gray] rounded-4xl flex items-center justify-center gap-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -15,14 +15,14 @@ const Navbar = () => {
         <div>Home</div>
       </div>
 
-      <ul className="flex gap-9 px-7 py-4 backdrop-blur-sm bg-white/10 border border-gray-400 rounded-4xl">
+      <ul className="flex gap-9 px-7 py-4 backdrop-blur-sm bg-white/10 border border-[gray] rounded-4xl">
         <li>About</li>
         <li>Tech Stack</li>
         <li>Projects</li>
         <li>Contact</li>
       </ul>
 
-      <div className="py-2 px-7 backdrop-blur-sm bg-white/10 border border-gray-400 rounded-4xl flex items-center justify-center gap-2">
+      <div className="py-2 px-7 backdrop-blur-sm bg-white/10 border border-[gray] rounded-4xl flex items-center justify-center gap-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"

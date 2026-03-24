@@ -29,15 +29,15 @@ const EducationandCertificates = () => {
           </button>
         </div>
 
-        <div className="displaycont h-fit w-2xl border rounded-md flex flex-col gap-5 p-5 relative ">
+        <div className="displaycont h-fit w-2xl border-2 rounded-md border-[gray] flex flex-col gap-5 p-5 relative backdrop-blur-sm bg-white/10">
           <div
-            className={`absolute left-11 top-0 h-full w-px border ${
+            className={`absolute left-11 top-0 h-full w-px border border-[gray] ${
               toggleCertificate ? "opacity-0" : "opacity-100"
             }`}
           ></div>
 
           {!toggleCertificate ? (
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 ">
               <Education
                 Logo={BuntsLogo}
                 StartDate={"June 2025"}
