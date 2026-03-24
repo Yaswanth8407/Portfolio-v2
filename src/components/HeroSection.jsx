@@ -1,6 +1,5 @@
 import React from "react";
-import Mypic from "../assets/image.png";
-import Bg_img from "../assets/download.jpg";
+import Mypic from "../assets/Others/image.png";
 
 const HeroSection = () => {
   return (
