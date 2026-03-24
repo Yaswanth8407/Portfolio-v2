@@ -1,32 +1,32 @@
 import React from "react";
 
 const skillsData = [
-  {
-    title: "Backend",
-    desc: "I love problem-solving and building complex systems. I strive to create scalable, reliable, and secure solutions.",
-    items: ["TS", "Node", "Go", "Postgres", "Mongo", "Kafka", "GraphQL"],
+    {
+    title: "Programming Languages",
+    desc: "I have a strong foundation in programming and problem-solving using multiple languages.",
+    items: ["C", "C++", "Python", "JavaScript"],
   },
   {
-    title: "Frontend & Design",
-    desc: "I'm passionate about design, animation, and interactions, always aiming to build fun websites with great user experiences.",
-    items: ["Vue", "React", "Nuxt", "Next", "Tailwind", "Figma"],
+    title: "Web Development",
+    desc: "I build responsive and dynamic web applications with modern frontend and backend technologies.",
+    items: ["HTML", "CSS", "React", "Node.js", "Express"],
   },
   {
-    title: "Cloud & DevOps",
-    desc: "I have deployed and managed various applications using tools such as AWS, GCP, and other cloud services.",
-    items: ["AWS", "Linux", "Docker", "Kubernetes", "Terraform", "Redis"],
+    title: "Databases",
+    desc: "I work with both SQL and NoSQL databases to store and manage application data efficiently.",
+    items: ["MongoDB", "MySQL", "Oracle", "MS Access"],
   },
   {
-    title: "Management",
-    desc: "I have worked with multiple clients and stakeholders to define projects that suit their needs and have led these projects.",
-    items: ["Agile", "Scrum", "Jira", "Office"],
+    title: "Tools & Technologies",
+    desc: "I use various tools and platforms to develop, manage, and deploy applications efficiently.",
+    items: ["Git", "GitHub", "VS Code", "Power BI", "Vercel", "FireBase"],
     isTag: true,
   },
 ];
 
 const Skills = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center px-6 py-16  border-b-2 border-[gray]">
+    <div className="min-h-screen flex items-center justify-center px-6 py-16  border-b-2 border-[gray]" id="TechStack">
       <div className="max-w-6xl w-full">
         <h1 className="text-center text-3xl font-semibold mb-12">Skills</h1>
 
@@ -53,14 +53,14 @@ const Skills = () => {
                   card.isTag ? (
                     <span
                       key={idx}
-                      className="px-4 py-1 rounded-lg bg-purple-500/20 text-purple-300 text-sm"
+                      className="px-4 py-2 rounded-lg bg-purple-500/20 text-purple-300 text-sm "
                     >
                       {item}
                     </span>
                   ) : (
                     <div
                       key={idx}
-                      className="w-10 h-10 flex items-center justify-center bg-white/10 rounded-md text-xs"
+                className="w-fit h-10 flex items-center justify-center bg-white/10 rounded-md text-xs px-4"
                     >
                       {item}
                     </div>

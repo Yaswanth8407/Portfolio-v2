@@ -3,7 +3,11 @@ import React from "react";
 const Navbar = () => {
   return (
     <div className="fixed flex w-350 top-10 h-12 items-center justify-between mx-15 z-50">
-      <div className="py-2 px-7 backdrop-blur-sm bg-white/10 border border-[gray] rounded-4xl flex items-center justify-center gap-2">
+      
+      {/* Home */}
+      <a href="#Home">
+      <div className="py-2 px-7 backdrop-blur-sm bg-white/10 border border-[gray] rounded-4xl flex items-center justify-center gap-2 
+      transition-all duration-300 hover:scale-105 hover:bg-white/20 cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -14,15 +18,20 @@ const Navbar = () => {
         </svg>
         <div>Home</div>
       </div>
+      </a>
 
-      <ul className="flex gap-9 px-7 py-4 backdrop-blur-sm bg-white/10 border border-[gray] rounded-4xl">
-        <li>About</li>
-        <li>Tech Stack</li>
-        <li>Projects</li>
-        <li>Contact</li>
+      {/* Nav Links */}
+      <ul className="flex gap-9 px-7 py-4 backdrop-blur-sm bg-white/10 border border-[gray] rounded-4xl 
+      transition-all duration-300 hover:bg-white/20">
+        <li className="transition-all duration-300 hover:scale-110 cursor-pointer"><a href="#About">About</a></li>
+        <li className="transition-all duration-300 hover:scale-110 cursor-pointer"><a href="#TechStack">Tech Stack</a></li>
+        <li className="transition-all duration-300 hover:scale-110 cursor-pointer"><a href="#Projects">Projects</a></li>
+        <li className="transition-all duration-300 hover:scale-110 cursor-pointer"><a href="#Contact">Contact</a></li>
       </ul>
 
-      <div className="py-2 px-7 backdrop-blur-sm bg-white/10 border border-[gray] rounded-4xl flex items-center justify-center gap-2">
+      {/* Resume */}
+      <div className="py-2 px-7 backdrop-blur-sm bg-white/10 border border-[gray] rounded-4xl flex items-center justify-center gap-2 
+      transition-all duration-300 hover:scale-105 hover:bg-white/20 cursor-pointer" onClick={() => window.open("/Resume.docx", "_blank")}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -33,6 +42,7 @@ const Navbar = () => {
         </svg>
         <div>Resume</div>
       </div>
+
     </div>
   );
 };

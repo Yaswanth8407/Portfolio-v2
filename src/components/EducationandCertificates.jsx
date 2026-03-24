@@ -11,33 +11,50 @@ const EducationandCertificates = () => {
   const [toggleCertificate, setToggleCertificate] = useState(false);
 
   return (
-    <div className="w-full h-screen flex items-center justify-center border-b-2 border-[gray]">
+    <div className="w-full h-screen flex items-center justify-center border-b-2 border-[gray]" id="About">
       <div className="wholecont flex gap-3 flex-col items-center">
-        <div className="btnWrap flex text-xl">
+
+        {/* Buttons */}
+        <div className="btnWrap flex text-xl gap-3 bg-white/10 p-1 rounded-xl backdrop-blur-sm border border-[gray]">
+          
           <button
-            className="px-40 py-1 flex rounded-md"
+            className={`px-25 py-2 rounded-lg transition-all duration-300 cursor-pointer
+            ${
+              !toggleCertificate
+                ? "bg-white text-black scale-105 mx-2"
+                : "hover:bg-white/20 hover:scale-105"
+            }`}
             onClick={() => setToggleCertificate(false)}
           >
             Education
           </button>
 
           <button
-            className="px-40 py-1 flex rounded-md"
+            className={`px-25 py-2 rounded-lg transition-all duration-300 cursor-pointer
+            ${
+              toggleCertificate
+                ? "bg-white text-black scale-105 mx-2"
+                : "hover:bg-white/20 hover:scale-105"
+            }`}
             onClick={() => setToggleCertificate(true)}
           >
             Certificates
           </button>
+
         </div>
 
-        <div className="displaycont h-fit w-2xl border-2 rounded-md border-[gray] flex flex-col gap-5 p-5 relative backdrop-blur-sm bg-white/10">
+        {/* Container */}
+        <div className="displaycont h-fit w-2xl ${togglecertificate && border-2 rounded-md border-[gray]} flex flex-col gap-5 p-5 relative backdrop-blur-s transition-all duration-300 hover:bg-white/15">
+
+          {/* Timeline Line */}
           <div
-            className={`absolute left-11 top-0 h-full w-px border border-[gray] ${
+            className={`absolute left-11 top-0 h-full w-px border border-[gray] transition-all duration-300 ${
               toggleCertificate ? "opacity-0" : "opacity-100"
             }`}
           ></div>
 
           {!toggleCertificate ? (
-            <div className="flex flex-col gap-5 ">
+            <div className="flex flex-col gap-5 transition-all duration-300">
               <Education
                 Logo={BuntsLogo}
                 StartDate={"June 2025"}
@@ -61,7 +78,7 @@ const EducationandCertificates = () => {
               />
             </div>
           ) : (
-            <div className="flex p-5 gap-5 rounded-4xl">
+            <div className="flex p-5 gap-5 rounded-4xl transition-all duration-300">
               <Certificates
                 Certificate={TATA_gen_AI}
                 Title={"HTML and CSS from Beginning to Advanced"}

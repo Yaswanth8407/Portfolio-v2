@@ -1,9 +1,9 @@
 const Contact = () => {
   return (
-    <div className="w-full border-t border-white/20 py-16 flex flex-col items-center justify-center bg-[#010F40] text-white">
+    <div className="w-full border-t border-white/20 py-16 flex flex-col items-center justify-center bg-[#010F40] text-white" id="Contact">
       {/* Icons */}
       <div className="flex gap-6 text-2xl mb-6 h-5 w-25 justify-center">
-        <a href="#" className="hover:text-blue-400 transition">
+        <a href="https://linkedin.com/in/yaswanth8407" className="hover:text-blue-400 transition">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -14,7 +14,7 @@ const Contact = () => {
           </svg>
         </a>
 
-        <a href="#" className="hover:text-gray-300 transition">
+        <a href="https://github.com/Yaswanth8407" className="hover:text-gray-700 transition">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -25,7 +25,7 @@ const Contact = () => {
           </svg>
         </a>
 
-        <a href="#" className="hover:text-yellow-400 transition">
+        <a href="https://www.instagram.com/mattaparthi_yaswanth/" className="hover:text-yellow-400 transition">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -36,7 +36,7 @@ const Contact = () => {
           </svg>
         </a>
 
-        <a href="https://x.com/yaswanth8407">
+        <a href="https://x.com/yaswanth8407" className="hover:text-gray-700 transition">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"

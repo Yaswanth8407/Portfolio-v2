@@ -16,3 +16,7 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
   background-color: #0A113D;
 }
+
+html {
+  scroll-behavior: smooth;
+}
