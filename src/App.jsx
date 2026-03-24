@@ -6,12 +6,12 @@ import Projects from "./components/Projects";
 
 const App = () => {
   return (
-    <>
+    <div className="relative">
       <Navbar />
       <HeroSection />
       <EducationandCertificates />
       <Projects />
-    </>
+    </div>
   );
 };
 
