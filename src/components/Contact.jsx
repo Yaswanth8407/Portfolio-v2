@@ -55,6 +55,7 @@ const Contact = () => {
         <span>&nbsp; |&nbsp; </span>
         <a href="sms:+918369773909">+91 83697 73909</a>
       </span>
+      <div className="opacity-65 mt-5">(Last Updated on 24 March,2026)</div>
     </div>
   );
 };

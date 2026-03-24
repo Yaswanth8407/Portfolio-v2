@@ -4,7 +4,7 @@ const skillsData = [
     {
     title: "Programming Languages",
     desc: "I have a strong foundation in programming and problem-solving using multiple languages.",
-    items: ["C", "C++", "Python", "JavaScript"],
+    items: ["C", "C++", "Python", "JavaScript", "SQL"],
   },
   {
     title: "Web Development",

@@ -31,7 +31,7 @@ const Navbar = () => {
 
       {/* Resume */}
       <div className="py-2 px-7 backdrop-blur-sm bg-white/10 border border-[gray] rounded-4xl flex items-center justify-center gap-2 
-      transition-all duration-300 hover:scale-105 hover:bg-white/20 cursor-pointer" onClick={() => window.open("/Resume.docx", "_blank")}>
+      transition-all duration-300 hover:scale-105 hover:bg-white/20 cursor-pointer" onClick={() => window.open("/Yaswanth_Resume_24_March_2026.pdf", "_blank")}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"

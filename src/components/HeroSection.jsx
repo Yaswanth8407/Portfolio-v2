@@ -45,7 +45,7 @@ const HeroSection = () => {
         <button
           className="text-xl flex items-center justify-center gap-2 border-2 border-[gray] px-4 py-1 rounded-4xl
           transition-all duration-300 hover:scale-105 hover:bg-white/20 cursor-pointer"
-          onClick={() => window.open("/Resume.docx", "_blank")}
+          onClick={() => window.open("Yaswanth_Resume_24_March_2026.pdf", "_blank")}
         >
           <svg
             className="size-5"
