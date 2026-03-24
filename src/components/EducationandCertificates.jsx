@@ -4,12 +4,14 @@ import SiesLogo from "../assets/ClgLogos/SiesLogo.jpg";
 import BuntsLogo from "../assets/ClgLogos/BuntsLogo.png";
 import { useState } from "react";
 import Certificates from "./Certificates";
+import TATA_gen_AI from "../assets/Certificates/TATA_gen_AI.png";
+import Udemy_HTML_CSS from "../assets/Certificates/Udemy_HTML_CSS.png";
 
 const EducationandCertificates = () => {
   const [toggleCertificate, setToggleCertificate] = useState(false);
 
   return (
-    <div className="w-full h-screen flex items-center justify-center">
+    <div className="w-full h-screen flex items-center justify-center border-b-2 border-[gray]">
       <div className="wholecont flex gap-3 flex-col items-center">
         <div className="btnWrap flex text-xl">
           <button
@@ -27,7 +29,7 @@ const EducationandCertificates = () => {
           </button>
         </div>
 
-        <div className="displaycont h-fit w-2xl border rounded-md flex flex-col gap-5 p-5 relative">
+        <div className="displaycont h-fit w-2xl border rounded-md flex flex-col gap-5 p-5 relative ">
           <div
             className={`absolute left-11 top-0 h-full w-px border ${
               toggleCertificate ? "opacity-0" : "opacity-100"
@@ -35,7 +37,7 @@ const EducationandCertificates = () => {
           ></div>
 
           {!toggleCertificate ? (
-            <>
+            <div className="flex flex-col gap-5">
               <Education
                 Logo={BuntsLogo}
                 StartDate={"June 2025"}
@@ -57,9 +59,21 @@ const EducationandCertificates = () => {
                 ClgName={"The Andhra Education Society's High School"}
                 Course={"SSC (10th std) - 86.6%"}
               />
-            </>
+            </div>
           ) : (
-            <Certificates />
+            <div className="flex p-5 gap-5 rounded-4xl">
+              <Certificates
+                Certificate={TATA_gen_AI}
+                Title={"HTML and CSS from Beginning to Advanced"}
+                CompletionDate={"April 17, 2025"}
+              />
+
+              <Certificates
+                Certificate={Udemy_HTML_CSS}
+                Title={"GenAl Powered Data Analytics Job Simulation"}
+                CompletionDate={"September 1st, 2025"}
+              />
+            </div>
           )}
         </div>
       </div>

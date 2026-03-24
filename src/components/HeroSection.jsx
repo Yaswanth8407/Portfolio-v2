@@ -3,9 +3,7 @@ import Mypic from "../assets/Others/image.png";
 
 const HeroSection = () => {
   return (
-    <div
-      className="w-full h-screen flex flex-col gap-2 items-center justify-center border-b-2 border-[gray]"
-    >
+    <div className="w-full h-screen flex flex-col gap-2 items-center justify-center border-b-2 border-[gray]">
       <div className="MyPicAndName flex gap-4 items-center justify-center ">
         <img
           src={Mypic}
@@ -14,7 +12,10 @@ const HeroSection = () => {
         />
         <div className="NameAndLoc">
           <div className="name font-bold text-2xl">Yaswanth Mattaparthi.</div>
-          <div className="loc text-xs flex gap-1 font-bold items-center"><img src="https://flagcdn.io/flags/4x3/in.svg" className="size-6" /> Based in Mumbai, India</div>
+          <div className="loc text-xs flex gap-1 font-bold items-center">
+            <img src="https://flagcdn.io/flags/4x3/in.svg" className="size-6" />{" "}
+            Based in Mumbai, India
+          </div>
         </div>
       </div>
       <div className="Role1stHalf text-8xl font-bold">FULLSTACK</div>

@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
 
-const Certificates = () => {
+const Certificates = (props) => {
   return (
-    <div>
-        
+    <div className="border w-70 p-5 rounded-lg flex flex-col gap-3">
+      <img src={props.Certificate} alt="" className="w-60" />
+      <div>
+        <div>{props.Title}</div>
+        <div className="Course text-xs opacity-65 mt-2">
+          {props.CompletionDate}
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Certificates
+export default Certificates;
